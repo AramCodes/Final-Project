@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prduct Page</title>
+    <link rel="stylesheet" href="css/productStyles.css">
+</head>
+    <body>
+        <header>
+            <div class="main-nav"> 
+             <input type="text" id="search" name="search" placeholder="&#128270; Search">
+                <ul class="nav" id="myTopnav">
+                    <li><a class="nav-link" href="index.html">HOME</a></li>
+                    <li><a class="nav-link" href="about.html">About</a></li>
+                    <li><a class="nav-link" href="shop.html"></i>Shop</a></li>
+                    <li><a class="nav-link" href="help.html">Help</a></li>
+      
+                </ul>
+                <button class="cart"> <i class="fa fa-shopping-cart">Your Cart </i></button>
+            </div>
+          </header>  
+        <main>
+            <section class="productInfo">
+                <div class="imageContainer">
+                    <img class="productImg" src="/resources/images/placeholder_IMG.jpg" alt="Image Not Found">
+                    <div class="imageLineup">
+                        <img class="productImg, productImgSmall" src="/resources/images/placeholder_IMG.jpg" alt="Image Not Found">
+                        <img class="productImg, productImgSmall" src="/resources/images/placeholder_IMG.jpg" alt="Image Not Found">
+                        <img class="productImg, productImgSmall" src="/resources/images/placeholder_IMG.jpg" alt="Image Not Found">
+                    </div>
+                </div>
+                <div class="productDescription">
+                    <h1>Product title</h1>
+                    <!---Star-rating Image here-->
+                    <img alt="Image Not Found">
+                    <h3>5 reviews</h6> <!--5 to be retrieved from database-->
+                    <br>
+                    <h2>$ 1232</h2> <!--Price to be retrieved from database-->
+                    <form class="modelSelector">
+                        <select> <!--Options to be retrieved from database-->
+                            <option value="val1">Option 1</option>
+                            <option value="val2">Option 2</option>
+                            <option value="val3">Option 3</option>
+                        </select>
+                    </form>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+                <br> <!--add in line divider-->
+                <button>Add To Cart</button>
+            </section>
+            <section class="similarProducts">
+                <h1>Similar Products</h1>
+                <div class="simProdCard"> <!--All Product Info will be retrieved from database-->
+                    <img class="productImgSmall" src="/resources/images/placeholder_IMG.jpg" alt="Image Not Found">
+                    <h6>Product Name</h6>
+                    <!---Star-rating Image here-->
+                    <h6>$300</h6>
+                </div>
+                <div class="productImgSmall"> <!--All Product Info will be retrieved from database-->
+                    <img class="productImgSmall" src="/resources/images/placeholder_IMG.jpg" alt="Image Not Found">
+                    <h6>Product Name</h6>
+                    <!---Star-rating Image here-->
+                    <h6>$300</h6>
+                </div>
+                <div class="productImgSmall"> <!--All Product Info will be retrieved from database-->
+                    <img class="productImgSmall" src="/resources/images/placeholder_IMG.jpg" alt="Image Not Found">
+                    <h6>Product Name</h6>
+                    <!---Star-rating Image here-->
+                    <h6>$300</h6>
+                </div>
+            </section>
+            <section>
+                <h1>Reviews</h1>
+                <div class="review">
+                    <div class="profile">
+                        <img class="productImg" class="profilePic" src="/resources/images/placeholder_IMG.jpg" alt="Image Not Found">
+                        <h5>JOHN DOE</h5>
+                        <p>March 31, 2018</p> <!--current date and time to be added in later-->
+                        <!--Star-rating Image here-->
+                    </div>
+                    <p class="review">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+                </div>
+                <div class="review">
+                    <div class="profile">
+                        <img class="productImg" class="profilePic" src="/resources/images/placeholder_IMG.jpg" alt="Image Not Found">
+                        <h5>JOHN DOE</h5>
+                        <p>March 31, 2018</p> <!--current date and time to be added in later-->
+                        <!--Star-rating Image here-->
+                    </div>
+                    <p class="review">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
