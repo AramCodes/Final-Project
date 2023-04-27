@@ -8,9 +8,34 @@ body {
     box-sizing: inherit;
   }
 
+.about-section p {
+    text-align: center;
+    font-size: 1.2rem;
+    width: 70ch;
+    margin: 0 auto;
+}
+
+.about-section h1 {
+    font-size: 3rem;
+}
+
+.about-section h4 {
+    font-size: 1.5rem;
+}
+  
+h2 {
+    text-align:center;
+    color: #fff;
+    margin: 50px auto 0 auto;
+    font-size: 2.5rem;
+} 
+  
 .outer-container {
     display: flex;
     justify-content: center;
+    background: url(../resources/images/unsplash1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 } 
   
 .column {
@@ -23,6 +48,7 @@ body {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
+    background-color: #fff;
 }
   
 .about-section {
@@ -50,30 +76,33 @@ body {
     border: none;
     outline: 0;
     display: inline-block;
-    padding: 8px;
+    padding: 15px 45px;
     color: white;
     background-color: #000;
     text-align: center;
     cursor: pointer;
-    width: 100%;
     background-color: #f57A2f;
+    border-radius: 5px;
+    margin: 20px auto;
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: background-color .5s;
 }
   
 .button:hover {
-    background-color: #555;
+    background-color: #1DA7A8;
 }
   
-  @media screen and (max-width: 450px) {
+@media screen and (max-width: 1758px) {
     .column {
-      width: 100%;
+      width: 50%;
       display: block;
     }
 }
 
-
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 800px) {
     .column {
-      width: 50%;
+      width: 100%;
       display: block;
     }
 }
