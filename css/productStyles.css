@@ -56,25 +56,34 @@ h1 {
 
 .productImgSmall {
     height: auto;
-    max-width: 100px;
+    max-width: 30%;
 }
+
+.productInfo {
+}
+
 /* * * * * Product Image Styling * * * * */
 .imageContainer {
     display: inline-block;
     width: 60%;
+    min-height: 430px;
     align-content: center;
+    border-style: hidden solid hidden hidden;
+    border-color: #595959;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin-right: -.25%;
 }
 
 .imageContainer .productImg {
     display: flex;
     height: auto;
-    max-width: 80%;
-    justify-self: center;
-    margin-left: 12%;
+    width: 80%;
+    justify-content: center;
+
 }
 
 .imageLineup {
-    /*position: absolute;*/
     margin-top: 6px;
     display: flex;
     width: 80%;
@@ -87,7 +96,11 @@ h1 {
 .productDescription {
     display: inline-block;
     width: 35%;
+    min-height: 430px;
     justify-self: right;
+    padding-left: 2%;
+    margin-left: -.25%;
+    vertical-align: top;
 }
 
 .productDescription h3{
@@ -111,5 +124,24 @@ h1 {
 
 /* * * * * Similar Products Styling * * * * */
 .similarProducts {
-    justify-content: center;
+    display: inline-block;
+    justify-content: space-around;
+    height: 30%;
 }
+
+.simProdCard {
+    display: inline-block;
+    width: 30%;
+    height: 50%;
+}
+
+.simProdCard.productImgSmall {
+    display: inline-block;
+    width: 200%;
+    height: auto;
+}
+/* * * * * Similar Products Styling End * * * * */
+
+/* * * * * Reviews Styling * * * * */
+
+/* * * * * Reviews Styling End * * * * */
