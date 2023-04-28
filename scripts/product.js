@@ -6,6 +6,10 @@ class Product {
         this.price = price;
         this.id = id;
     }
+
+    addProductCard(product){
+        const productHTML = 'html goes here';
+    }
 }
 
 export default Product;
