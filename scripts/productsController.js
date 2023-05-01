@@ -6,8 +6,8 @@ class ProductsController {
         this.currentId = currentId;
     }
 
-    addProduct(prodName='Default Product', description='Default Product description', img=undefined, price=0) {     
-        const newProduct = new Product(prodName, description, img, price, this.currentId);
+    addProduct(prodName='Default Product', description='Default Product description', img=undefined, price=0, rating=0) {     
+        const newProduct = new Product(prodName, description, img, price, rating, this.currentId);
         this.currentId++;
 
         this.products.push(newProduct);
@@ -32,6 +32,16 @@ class ProductsController {
         }
         else {
             this.products.splice(id,1);
+        }
+    }
+
+    loadProductFromLocalStorage() {
+        const storageItems = localStorage.getItem("items");
+        if (storageItems) {
+            const items = JSON.parse(storageItems);
+            for (let i=0; i < items.length; i++) {
+                this.items.push(items[i]);
+            }
         }
     }
 }
