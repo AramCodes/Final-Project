@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 300vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+:root {
+    --bg-color: #fff;
+    --text-color:#111;
+    --primary-color:#1DA7A8;    
+    --secondary-color:#595959; 
+    --tertiary-color:white;  
+    --cta-color:#305148;       
+    --big-font: 4.5rem;
+    --h2-font-size:2.25rem;
+    --h4-font-size:1.5rem;
+    --normal-font-size:1.2rem;
+    --secondary-font-size:1.5rem;
+    --third-font-size:1.25rem;
+    --primary-font-stack:'Open Sans', sans-serif;
+    --secondary-font-stack:'Permanent Marker', 'Roboto';
+}
+
+header {
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 0 14%;
+    transition: all .5s ease-in-out;
+}
+
+.logo {
+    margin: 0 10px;
+    font-size:1.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    font-family: var(--secondary-font-stack);
+}
+
+.navmenu {
+    display: flex;
+    margin: 0 15px;
+}
+
+.navmenu a {
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 25px;
+    font-size: var(--third-font-size);
+    transition: all .5s ease;
+}
+
+.navmenu a:hover {
+    color: var(--cta-color);
+}
+
+.header-icons i {
+    font-size: var(--h2-font-size);
+    color: #fff;
+    margin-right: var(--third-font-size);
+    transition: all .4s ease;
+}
+
+.header-icons i:hover {
+    color: var(--cta-color);
+}
+
+#menu-icon {
+    font-size: 2.25rem;
+    z-index: 101;
+    color: var(--bg-color);
+    margin-right: var(--third-font-size);
+    display: none;
+}
+
+header.sticky {
+    background-color: var(--secondary-color);
+    padding: 0 14%;
+    box-shadow: 0px 0px 30px rgba(0 0 0 / 10%);
+}
+
+.bx-menu {
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    header {
+        padding:7px 4%;
+        transition: .2s;
+    }
+    header.sticky {
+        padding: 14px 4%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 670px) {
+    #menu-icon {
+        display: block;
+    }
+    .header-icons {
+        display: inline-flex;
+    }
+    .navmenu {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 280px;
+        height: 120vh;
+        background: var(--primary-color);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 150px 30px;
+        transition: all .45s ease;
+        margin: 0;
+    }
+
+    .navmenu a {
+        display: block;
+        margin: 1.5rem 0;
+    }
+
+    .navmenu.open {
+        left: 0;
+    }
+}
