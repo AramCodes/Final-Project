@@ -1,23 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/aboutStyles.css">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" 
-    referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!--Header-->
+    <header>
+        <a href="#" class="logo">SneakerHeadz</a>
+
+        <ul class="navmenu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="sell.html">Sell</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <a href=""><i class='bx bx-shopping-bag'></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <!--About Us-->
     <div class="about-section">
         <h1>About Us</h1>
 
@@ -33,72 +49,123 @@
         <h2>Meet Our Team</h2>  
 
       </div>
-      
+
+      <!--Card Container-->
+
+      <div class="outer-container">
+
+        <div class="container">
+          <div class="column">
+            <div class="card">
+              <img src="https://ca.slack-edge.com/T01HL7SPH3J-U04NM4Z3V09-4fa85889b9ca-512" alt="Aram" style="width:100%">
+              <div class="container">
+                <h2>Aram Valcourt</h2>
+                <p class="title">CEO & Founder</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>avalcourt<span class="email">@sneakerheadz.com</span></p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="card">
+              <img src="https://ca.slack-edge.com/T01HL7SPH3J-U04MTV76R9D-bf4a416239f5-512" alt="Justin" style="width:100%">
+              <div class="container">
+                <h2>Justin Jeirles</h2>
+                <p class="title">CTO & Co-Founder</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>jjeirles<span class="email">@sneakerheadz.com</span></p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="card">
+              <img src="https://ca.slack-edge.com/T01HL7SPH3J-U04NAV7LSAY-g3fc63f7c4f6-512" alt="Andualem" style="width:100%">
+              <div class="container">
+                <h2>Andualem Teshome</h2>
+                <p class="title">CFO & Co-Founder</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>ateshome<span class="email">@sneakerheadz.com</span></p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+  
+        <div class="column">
+          <div class="card">
+            <img src="https://ca.slack-edge.com/T01HL7SPH3J-U04N8CB4NFM-875faf52b6f4-512" alt="Emmanuel" style="width:100%">
+            <div class="container">
+              <h2>Emmanuel Cooke</h2>
+              <p class="title">COO & Co-Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>ecooke<span class="email">@sneakerheadz.com</span></p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+        </div>
+  
+      </div>
+
+      <!--Footer-->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Main Menu</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                       
+                        <li><a href="#">The Company</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Discover</h4>
+                    <ul>
+                        <li><a href="#">The Team</a></li>
+                        <li><a href="#">Our History</a></li>
+                        <li><a href="#">Brand Motto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Find Us On</h4>
+                    <ul>
+                        <li>
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            <div class="footer-col2">
+                <h4>1717 Harrison St. San Francisco, CA 94103, USA</h4>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/header.js"></script>
     
-
-    <div class="outer-container">
-
-      <div class="container">
-        <div class="column">
-          <div class="card">
-            <img src="https://ca.slack-edge.com/T01HL7SPH3J-U04NM4Z3V09-4fa85889b9ca-512" alt="Aram" style="width:100%">
-            <div class="container">
-              <h2>Aram Valcourt</h2>
-              <p class="title">CEO & Founder</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>avalcourt<span class="email">@sneakerheadz.com</span></p>
-              <p><button class="button">Contact</button></p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <img src="https://ca.slack-edge.com/T01HL7SPH3J-U04MTV76R9D-bf4a416239f5-512" alt="Justin" style="width:100%">
-            <div class="container">
-              <h2>Justin Jeirles</h2>
-              <p class="title">CTO & Co-Founder</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>jjeirles<span class="email">@sneakerheadz.com</span></p>
-              <p><button class="button">Contact</button></p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <img src="https://ca.slack-edge.com/T01HL7SPH3J-U04NAV7LSAY-g3fc63f7c4f6-512" alt="Andualem" style="width:100%">
-            <div class="container">
-              <h2>Andualem Teshome</h2>
-              <p class="title">CFO & Co-Founder</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>ateshome<span class="email">@sneakerheadz.com</span></p>
-              <p><button class="button">Contact</button></p>
-            </div>
-          </div>
-        </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="https://ca.slack-edge.com/T01HL7SPH3J-U04N8CB4NFM-875faf52b6f4-512" alt="Emmanuel" style="width:100%">
-          <div class="container">
-            <h2>Emmanuel Cooke</h2>
-            <p class="title">COO & Co-Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>ecooke<span class="email">@sneakerheadz.com</span></p>
-            <p><button class="button">Contact</button></p>
-          </div>
-        </div>
-      </div>
-      </div>
-
-    </div>
-
-    <div class="social">
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-
 </body>
-</html>
