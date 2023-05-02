@@ -23,6 +23,97 @@
       </div>
     </header>  
   <body>
+
+    <div class="heading">
+      <h3>Featured Categories</h3>
+    </div>
+    
+
+    <section>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="images/shoe4.png" alt="Product 1">
+              <p>Air Jordan</p>
+              <p>$190</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/shoe5.png" alt="Product 2">
+              <p>Jordan</p>
+              <p>$250</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/shoe6.png" alt="Product 3">
+              <p>Nike</p>
+              <p>$150</p>
+            </a>
+            
+          </li>
+        </ul>
+      </section>
+
+    <div class="container3">
+          
+          <div class="row">
+            <div class="col-sm-8" id="newsletter">
+              <h2> Newsletter</h2>
+              <p>Discounts and promotions: Offer exclusive discounts and promotions to your newsletter subscribers as a way to reward their loyalty and encourage them to make a purchase. </p>
+            </div>
+            <div class="col-sm-4" id="newsletter">
+              <input type="text" placeholder="Email address" name="mail" required>
+              <button class="subscribe" id="button">Subscribe </i></button>
+
+              <script type="text/javascript">
+                const purchaseButton = document.getElementById("button");
+                    purchaseButton.addEventListener("click", function() {
+                      alert("Thank you!");
+                    });
+              </script>
+            </div>
+            
+          </div>
+        </div>
+     </div>
+        
+     <main>
+      <section>
+        <ul>
+          <li>
+              <h2 style="font-size: 20px; color: green;">Our Product</h2>
+              <p style="font-size: 20px; margin-left: 15px;">Welcome to our online shoe store, where we specialize in providing you with high-quality shoes that are not only stylish but also comfortable to wear. We understand that finding the perfect pair of shoes can be a daunting task, but we're here to help make the process as easy and enjoyable as possible.
+
+              At our store, we offer a wide variety of shoes for men, women, and children. From sneakers to sandals to dress shoes, we have something for everyone.
+
+              </p>
+            <div class="">
+                <button style="width: 130px; height: 55px; color: white; background-color: green;" ><a href="index.html">Browse All </a></i></button>
+            </div>
+          </li>
+          
+          <li>
+            <a href="#">
+              <img src="images/BG_B_G.png" alt="Product 2">
+               <p>Nike</p>
+              <p>$150</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/RWBB.png" alt="Product 3">
+               <p>Air Jordan</p>
+              <p>$150</p>
+            </a>
+          </li>
+        </ul>
+
+        
+      </section>
+    </main>
+
     <h1>Payment</h1>
     <form action="submit-payment.php" method="post">
       <label for="name">Name on Card:</label>
@@ -42,19 +133,127 @@
                     });
               </script>
     </form>
+
     <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+      }
+
+      
+
+      main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+      }
+
+      section {
+      width: 100%;
+      margin-bottom: 40px;
+      }
+
+      section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      }
+
+      section ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      }
+
+      section li {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+
+      section li a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      }
+
+      section li img {
+      width: 100%;
+      max-width: 200px;
+      margin-bottom: 10px;
+      }
+
+      section li h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      }
+
+      section li p {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 0;
+      }
+
+      footer {
+      background-color: #eee;
+      padding: 20px;
+      text-align: center;
+      }
+      @media (max-width: 768px) {
+      .row {
+        display: inline;
+         
+        }
+      .one {
+            padding: 0px;
+      }
+
+      .two {
+          padding: 0px;
+        }
+      
+      }
+
+      .row {
+
+        margin-left: 600px;
+        
+      }
+      .one {
+          padding: 40px;
+      }
+
+      .two {
+          padding: 40px;
+      }
+
+      .shopnow2 {
+          width: 220px;
+          height: 180px;
+          margin-top: 300px;
+          background-color: darkgreen;
+      }
       body {
         font-family: Arial, sans-serif;
         background-color: #f2f2f2;
       }
-      h1 {
+       h1 {
+        
         text-align: center;
         color: #333;
       }
       form {
         max-width: 400px;
         margin: 0 auto;
-        background-color: #fff;
+        background-color: lightgray;
         padding: 20px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

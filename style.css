@@ -12,6 +12,14 @@
   padding-left: 250px;
   background-color: #1DA7A8;
 
+
+
+}
+@media (max-width: 768px) {
+  #main-nav {
+
+    display: none;
+  }
 }
 
 ul {
@@ -164,6 +172,26 @@ text-align: center;
 
 /*
 * ==========================================
+* SHOP PAGE SECTION STARTS
+* ==========================================
+*/
+.heading {
+	padding-top: 50px;
+	text-align: center;
+	font-size: 60px;
+	color: green;
+	
+}
+
+
+/*
+* ==========================================
+* SHOP PAGE SECTION ENDS
+* ==========================================
+*/
+
+/*
+* ==========================================
 * ABOUT PAGE SECTION STARTS
 * ==========================================
 */
@@ -211,6 +239,58 @@ text-align: center;
                 
             }
     }
+@media (min-width: 487px) {
+  .container2 {
+    max-width: 750px;
+  }
+  .col-sm-4 {
+    width: 50%;
+  }
+  
+  #intro {
+    width: 100%;
+    height: 87vh;
+    position: relative;
+    background: url(../img/intro-carousel/p1.jpg) no-repeat;
+    background-size: contain;
+}
+
+ @media (min-width: 900px) {
+  .container2 {
+    max-width: 970px;
+  }
+  .col-sm-4 {
+    width: 33.33333333333333%;
+  }
+    #intro { 
+    background-size: cover;
+}
+}
+.sec-padding{
+	padding: 90px 0 90px 0;
+}
+@media (max-width: 767px){
+	#intro {
+    width: 100%;
+    height: 43vh;
+    position: relative;
+    background: url(../img/intro-carousel/p1.jpg) no-repeat;
+    background-size: contain;
+}
+
+.sec-padding{
+	padding: 30px 0;
+}
+}
+@media (min-width: 1200px) {
+  .container2 {
+    max-width: 1170px;
+  }
+  .col-sm-4 {
+    width: 25%;
+  }
+  }
+}
 /*
 * ==========================================
 * ABOUT PAGE SECTION ENDS
