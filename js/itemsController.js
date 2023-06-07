@@ -7,7 +7,7 @@ class ItemsController {
     }
 
     // Creating a new addItem method
-    async function addItem(name, description, imageUrl) {
+    async addItem(name, description, imageUrl) {
 
         e.preventDefault();
 
@@ -26,40 +26,66 @@ class ItemsController {
         localStorage.setItem("items", JSON.stringify(this.item));
 
          //pushes item to the api through a post request
-        const initialRequestObj = {
-            method: "POST",
-            headers: {
-                "Content-type": "application/json"
-            },
-            body: JSON.stringify(item)
-        }
-    
-        await fetch("http://localhost:8080/item", initialRequestObj);
+        save(name, description, imageUrl);
     
         await fetchItems();
 
     }
+    
+    save(name, description, imageUrl) {
+        const data = { 
+            name,  
+            description, 
+            imageUrl };
+
+        fetch('http://localhost:8080/item', { //local host 3306
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    }
+
+    update(id, name, description, imageUrl) {
+        const data = {
+            id,
+            name,
+            description,
+            imageUrl };
+        fetch('http://localhost:8080/item', {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });        
+    }
+
+    findItemById(id) {}
+
+    delete(id) {
+
+        fetch('http://localhost:8080/item', {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+    }
 }
-
-function save(name, description, imageUrl) {
-    const data = { 
-        name,  
-        description, 
-        imageUrl };
-
-    fetch('http://localhost:8080/item', { //local host 3306
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(data),
-    })
-    .then(response => response.json())
-    .then(data => {
-    console.log('Success:', data);
-    })
-    .catch((error) => {
-    console.error('Error:', error);
-    });
-}
-
